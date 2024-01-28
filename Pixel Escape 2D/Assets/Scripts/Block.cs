@@ -15,7 +15,7 @@ public class Block : MonoBehaviour
     {
         if(transform.position.y < -6f)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 }
