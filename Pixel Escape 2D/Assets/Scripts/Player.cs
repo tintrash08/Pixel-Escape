@@ -7,11 +7,16 @@ public class Player : MonoBehaviour
 {
     public float moveSpeed;
     Rigidbody2D rb;
+    SpriteRenderer spriteRenderer;
+    public Sprite injuredPigSprite;
+    public Sprite healthyPigSprite;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = healthyPigSprite;
     }
 
     // Update is called once per frame
@@ -38,7 +43,8 @@ public class Player : MonoBehaviour
     {
         if(collision.gameObject.tag == CommonConstants.blockTag)
         {
-            SceneManager.LoadScene("Level1");
+            spriteRenderer.sprite = injuredPigSprite;
+            //SceneManager.LoadScene("Level1");
         }
     }
 }
