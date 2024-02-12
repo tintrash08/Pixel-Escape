@@ -10,6 +10,10 @@ public class Player : MonoBehaviour
     SpriteRenderer spriteRenderer;
     public Sprite injuredPigSprite;
     public Sprite healthyPigSprite;
+    public GameManager GameManager;
+    public UIManager UIManager;
+
+    int health = 3;
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +47,17 @@ public class Player : MonoBehaviour
     {
         if(collision.gameObject.tag == CommonConstants.blockTag)
         {
-            spriteRenderer.sprite = injuredPigSprite;
+            health--;
+            UIManager.decreaseHealth(health);
+            if (health == 0)
+            {
+                spriteRenderer.sprite = injuredPigSprite;
+                GameManager.GameOver();
+            }
+            else
+            {
+                Destroy(collision.gameObject);
+            }
             //SceneManager.LoadScene("Level1");
         }
     }

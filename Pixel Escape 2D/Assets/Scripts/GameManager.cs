@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public GameObject tapToStartText;
     public TextMeshProUGUI scoreText;
 
+    public UIManager UIManager;
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0) && !isGameStarted)
@@ -35,6 +37,12 @@ public class GameManager : MonoBehaviour
         Vector3 spawnPos = spawnPoint.position;
         spawnPos.x = Random.Range(-maxX, maxX);
         Instantiate(blockPrefab, spawnPos, Quaternion.identity);
+    }
+
+    public void GameOver()
+    {
+        UIManager.GameOver();
+        Time.timeScale = 0f;
     }
 
 }
