@@ -62,4 +62,9 @@ public class Player : MonoBehaviour
             }
         }
     }
+
+    public void changePlayerMovementSensitivity(float speed)
+    {
+        moveSpeed = speed;
+    }
 }

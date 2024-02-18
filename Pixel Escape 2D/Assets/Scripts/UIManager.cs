@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -23,11 +24,17 @@ public class UIManager : MonoBehaviour
 
     public GameObject[] healthBar;
 
+    private float playerMovementSensitivity;
+    public Slider playerMovementSensitivitySlider;
+    public Player playerScript;
+
     private void Start()
     {
         highscore = PlayerPrefs.HasKey(CommonConstants.highScorePlayerPref) ? PlayerPrefs.GetInt(CommonConstants.highScorePlayerPref) : 0;
         highscoreText.text = "Highscore: " + highscore.ToString();
         pauseButton.SetActive(true);
+        playerMovementSensitivity = PlayerPrefs.GetFloat(CommonConstants.playerMovementSensitivity);
+        playerMovementSensitivitySlider.value = playerMovementSensitivity;
     }
     public void modifyActiveStatusOfElements(GameObject gameObject, bool status)
     {
@@ -96,6 +103,17 @@ public class UIManager : MonoBehaviour
             }
         }
 
+    }
+
+    public void changePlayerSensitivity(float value)
+    {
+        playerMovementSensitivity = value;
+    }
+
+    public void saveSettings()
+    {
+        PlayerPrefs.SetFloat(CommonConstants.playerMovementSensitivity, playerMovementSensitivity);
+        playerScript.changePlayerMovementSensitivity(playerMovementSensitivity);
     }
 
 }

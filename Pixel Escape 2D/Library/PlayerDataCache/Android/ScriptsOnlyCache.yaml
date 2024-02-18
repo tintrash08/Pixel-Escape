@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - BottomWall
     - Clouds
     - GameManager
+    - LetterBoxer
     - MainMenu
     - Player
     - UIManager
@@ -34,6 +35,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
   sceneClasses:
     Assets/Scenes/Level1.unity:
     - Class: 1
@@ -65,27 +67,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11850}
+      Script: {instanceID: 11858}
     - Class: 114
-      Script: {instanceID: 12924}
+      Script: {instanceID: 12224}
     - Class: 114
-      Script: {instanceID: 12926}
+      Script: {instanceID: 12932}
     - Class: 114
-      Script: {instanceID: 14074}
+      Script: {instanceID: 12934}
     - Class: 114
-      Script: {instanceID: 14102}
+      Script: {instanceID: 13712}
     - Class: 114
-      Script: {instanceID: 14416}
+      Script: {instanceID: 14084}
     - Class: 114
-      Script: {instanceID: 14502}
+      Script: {instanceID: 14112}
     - Class: 114
-      Script: {instanceID: 14522}
+      Script: {instanceID: 14426}
     - Class: 114
-      Script: {instanceID: 14892}
+      Script: {instanceID: 14512}
     - Class: 114
-      Script: {instanceID: 15050}
+      Script: {instanceID: 14532}
     - Class: 114
-      Script: {instanceID: 15160}
+      Script: {instanceID: 14902}
+    - Class: 114
+      Script: {instanceID: 15032}
+    - Class: 114
+      Script: {instanceID: 15062}
+    - Class: 114
+      Script: {instanceID: 15172}
+    - Class: 114
+      Script: {instanceID: 15218}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -136,31 +146,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11850}
+      Script: {instanceID: 11858}
     - Class: 114
-      Script: {instanceID: 12216}
+      Script: {instanceID: 12224}
     - Class: 114
-      Script: {instanceID: 12888}
+      Script: {instanceID: 12896}
     - Class: 114
-      Script: {instanceID: 12926}
+      Script: {instanceID: 12934}
     - Class: 114
-      Script: {instanceID: 12984}
+      Script: {instanceID: 12992}
     - Class: 114
-      Script: {instanceID: 13702}
+      Script: {instanceID: 13712}
     - Class: 114
-      Script: {instanceID: 14074}
+      Script: {instanceID: 14084}
     - Class: 114
-      Script: {instanceID: 14094}
+      Script: {instanceID: 14104}
     - Class: 114
-      Script: {instanceID: 14416}
+      Script: {instanceID: 14426}
     - Class: 114
-      Script: {instanceID: 14522}
+      Script: {instanceID: 14532}
     - Class: 114
-      Script: {instanceID: 14812}
+      Script: {instanceID: 14822}
     - Class: 114
-      Script: {instanceID: 14892}
+      Script: {instanceID: 14902}
     - Class: 114
-      Script: {instanceID: 15160}
+      Script: {instanceID: 15032}
+    - Class: 114
+      Script: {instanceID: 15172}
+    - Class: 114
+      Script: {instanceID: 15218}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -386,13 +400,13 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: a80e622f0688bfa77fd5989702c61c3d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainMenu
   - hash:
       serializedVersion: 2
-      Hash: 1dd2129f26288f1f48996792e6550523
+      Hash: 06245d07e753bda918d16ec35c1bb08d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -572,7 +586,7 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
-      Hash: d434f18092080d300d728acc3c141dbd
+      Hash: 10b2412d0173b948cb308a5bf1bfc3de
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIManager
@@ -626,6 +640,12 @@ ScriptsOnlyBuild:
     className: PlayModeRunnerCallback
   - hash:
       serializedVersion: 2
+      Hash: f20e9fc1cf83f9662a90221d089fafee
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LetterBoxer
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -638,7 +658,7 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: f48519e2556e81512b92c23f4dd0e7fb
+      Hash: 844abaf6a822b44ab5037abc069d953c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -713,4 +733,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Level1.unity
   playerPath: D:/Github/Github Repos/Pixel-Escape/Pixel Escape 2D/Android Builds/Trial
-    Builds/Dukkar1.1.apk
+    Builds/Dukkar1.2.apk

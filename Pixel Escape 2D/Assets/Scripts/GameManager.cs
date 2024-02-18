@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     bool isGameStarted = false;
     public UIManager uiManager;
 
-    public GameObject tapToStartText;
+    public GameObject instructionsUI;
     public TextMeshProUGUI scoreText;
 
     public UIManager UIManager;
@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && !isGameStarted)
         {
-            uiManager.modifyActiveStatusOfElements(tapToStartText, false);
+            uiManager.modifyActiveStatusOfElements(instructionsUI, false);
             StartSpawning();
             isGameStarted = true;
         }
