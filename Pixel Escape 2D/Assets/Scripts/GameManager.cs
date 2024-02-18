@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
 
     public UIManager UIManager;
+    public AudioSource soundEffectsAudioSource;
+    public AudioClip blockHitSoundEffect;
 
     void Update()
     {
@@ -41,6 +43,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        soundEffectsAudioSource.PlayOneShot(blockHitSoundEffect, 0.5f);
         UIManager.GameOver();
         Time.timeScale = 0f;
     }

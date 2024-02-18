@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public float moveSpeed;
+    private float moveSpeed;
     Rigidbody2D rb;
     SpriteRenderer spriteRenderer;
     public Sprite injuredPigSprite;
@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        moveSpeed = PlayerPrefs.GetFloat(CommonConstants.playerMovementSensitivity);
+        Debug.Log("moveSpeed:" + moveSpeed);
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = healthyPigSprite;
@@ -58,7 +60,6 @@ public class Player : MonoBehaviour
             {
                 Destroy(collision.gameObject);
             }
-            //SceneManager.LoadScene("Level1");
         }
     }
 }

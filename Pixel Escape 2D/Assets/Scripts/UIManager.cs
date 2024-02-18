@@ -21,6 +21,8 @@ public class UIManager : MonoBehaviour
     int score = 0;
     int highscore = 0;
 
+    public GameObject[] healthBar;
+
     private void Start()
     {
         highscore = PlayerPrefs.HasKey(CommonConstants.highScorePlayerPref) ? PlayerPrefs.GetInt(CommonConstants.highScorePlayerPref) : 0;
@@ -82,6 +84,17 @@ public class UIManager : MonoBehaviour
 
     public void decreaseHealth(int health)
     {
+        for (int i=1; i<healthBar.Length+1; i++)
+        {
+            if (i <= health)
+            {
+                healthBar[i-1].SetActive(true);
+            }
+            else
+            {
+                healthBar[i-1].SetActive(false);
+            }
+        }
 
     }
 
