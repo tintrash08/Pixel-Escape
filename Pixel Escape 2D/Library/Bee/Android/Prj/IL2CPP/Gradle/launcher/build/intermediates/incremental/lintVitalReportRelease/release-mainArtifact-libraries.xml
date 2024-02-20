@@ -1,0 +1,19 @@
+<libraries>
+  <library
+      name="D:\Github\Github Repos\Pixel-Escape\Pixel Escape 2D\Library\Bee\Android\Prj\IL2CPP\Gradle@@:unityLibrary::release"
+      jars="D:\Github\Github Repos\Pixel-Escape\Pixel Escape 2D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\.transforms\0de5212315d24b2e6e6aebeabbc02c25\transformed\out\jars\classes.jar;D:\Github\Github Repos\Pixel-Escape\Pixel Escape 2D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\.transforms\0de5212315d24b2e6e6aebeabbc02c25\transformed\out\jars\libs\unity-classes.jar"
+      resolved="Gradle:unityLibrary:unspecified"
+      folder="D:\Github\Github Repos\Pixel-Escape\Pixel Escape 2D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\.transforms\0de5212315d24b2e6e6aebeabbc02c25\transformed\out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="__local_aars__:D:\Github\Github Repos\Pixel-Escape\Pixel Escape 2D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified@jar"
+      jars="D:\Github\Github Repos\Pixel-Escape\Pixel Escape 2D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar"
+      resolved="__local_aars__:D:\Github\Github Repos\Pixel-Escape\Pixel Escape 2D\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\libs\unity-classes.jar:unspecified"/>
+</libraries>

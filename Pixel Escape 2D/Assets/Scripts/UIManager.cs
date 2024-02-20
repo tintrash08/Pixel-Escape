@@ -76,7 +76,6 @@ public class UIManager : MonoBehaviour
 
     public void QuitButton()
     {
-        Debug.Log("Quit");
         Application.Quit();
     }
 

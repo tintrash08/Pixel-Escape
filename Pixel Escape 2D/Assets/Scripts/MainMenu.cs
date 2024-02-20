@@ -22,7 +22,6 @@ public class MainMenu : MonoBehaviour
 
     public void QuitButton()
     {
-        Debug.Log("Quit");
         Application.Quit();
     }
 
@@ -42,6 +41,5 @@ public class MainMenu : MonoBehaviour
         {
             PlayerPrefs.SetFloat(CommonConstants.playerMovementSensitivity, 7.5f);
         }
-        Debug.Log("PlayerPrefs.GetFloat(CommonConstants.playerMovementSensitivity):" + PlayerPrefs.GetFloat(CommonConstants.playerMovementSensitivity));
     }
 }

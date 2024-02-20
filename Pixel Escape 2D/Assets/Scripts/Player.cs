@@ -19,7 +19,6 @@ public class Player : MonoBehaviour
     void Start()
     {
         moveSpeed = PlayerPrefs.GetFloat(CommonConstants.playerMovementSensitivity);
-        Debug.Log("moveSpeed:" + moveSpeed);
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = healthyPigSprite;
